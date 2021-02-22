@@ -104,7 +104,7 @@ class SetCriterion(nn.Module):
         empty_weight = torch.ones(self.num_classes + 1)
 
         
-        empty_weight = torch.Tensor([0.05, 0.09, 0.07, 0.07, 0.09, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.09, 0.07, 0.02])
+        empty_weight = torch.Tensor([1, 10 ,8, 1, 10 ,8, 6, 3 ,3, 4, 1 ,3, 1, 10 ,1, 0.2])
 
 
         self.register_buffer('empty_weight', empty_weight)
